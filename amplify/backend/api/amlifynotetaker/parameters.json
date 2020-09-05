@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "amlifynotetaker",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamlifynotetakercb8b83e7",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
